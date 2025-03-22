@@ -17,7 +17,7 @@ public class NoteMove : MonoBehaviour
 
         //print(fretboard.localScale.z / 2 * 10);
         //print(transform.position);
-        if (transform.position.z <= -(fretboard.localScale.z / 2 * 10)) {
+        if (transform.position.z <= fretboard.position.z - (fretboard.localScale.z / 2 * 10)) {
             print("Passed!");
         }
     }
